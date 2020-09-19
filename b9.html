@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>    //số min n
+count= 0
+array=[]
+n =+(prompt())
+while (n>=1)
+{
+    m= parseInt(n%10)
+    array.push(m)
+
+    n=n/10
+
+}alert(array)
+let min = array[0]
+let i =0
+while (i<array.length){
+    if (array[i]<min){
+        min= array[i]
+        i++
+    }else {
+        i++
+    }
+}
+alert(min)
+</script>
+</body>
+</html>
