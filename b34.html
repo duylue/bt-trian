@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>//kiểm tra số nt nhỏ hơn n
+
+    p=+(prompt('day so ban muon nhap tu 1 den'))
+    document.write('cac so nguyen to la ')
+    let n= 0
+    let count = 0
+
+    while (n<p){
+        let P= true
+        if (n<2){
+            P= false
+            n++
+        }else {
+            for (i=2;i<(n-1);i++){
+                if (n%i==0)
+                {
+                    P=false
+                    n++
+                }
+            }
+        }
+        if (P== true){
+            document.write(n+' ')
+            n++
+        }
+        else {
+            continue
+        }count++
+
+    }document.write('<br>'+'co tong'+' '+count+' '+'so nguyen to')
+</script>
+
+</body>
+</html>
