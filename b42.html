@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>//tìm vị trí số nhỏ nhất
+function testNumbers(a) {
+    let min = a[0]
+    count = 0
+    for (i = 0; i < a.length; i++) {
+        if (a[i] < min) {
+            min = a[i]
+            count = i
+        }
+
+    }
+    document.write('min là '+ min)
+    return   count
+
+}
+let list = [10,5,4,8,7,2,8,6,-22,1,-10,44874]
+let minlist=testNumbers(list)
+document.write('<br>'+'ở vị trí ' +minlist)
+
+</script>
+</body>
+</html>
