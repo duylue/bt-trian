@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>//nhâp; tên xem điểm
+    a=prompt()
+
+    arrayName = ['duy', 'alex','mac','jonh']
+    arrayT = [10,7,9,8,5]
+    arrayL = [9,6,8,6]
+    arrayH=   [9,5,8,6]
+    arrayP = [(arrayH[0]+arrayL[0]+arrayT[0])/3,(arrayH[1]+arrayL[1]+arrayT[1])/3,
+    (arrayH[2]+arrayL[2]+arrayT[2])/3,(arrayH[3]+arrayL[3]+arrayT[3])/3]
+
+    function test(b,c,d,e,f) {
+        for (i=0;i<b.length;i++){
+            if (b[i]==a){
+                alert('NAME '+b[i])
+                alert('điểm toán '+c[i])
+                alert( 'điểm lý '+d[i])
+                alert('điểm hóa '+e[i])
+                alert('điểm TB '+f[i])
+
+            }
+        }
+
+}
+    test(arrayName,arrayT,arrayL,arrayH,arrayP)
+
+
+
+</script>
+</body>
+</html>
