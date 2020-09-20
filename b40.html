@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>//liệt kê số chẵn
+    function testNumbers(a) {
+        let p = ''
+        count = 0
+        for (i = 0; i < a.length; i++) {
+            if (a[i] % 2 == 0) {
+                p = p + ' ' + a[i]
+                count++
+                console.log(count)
+            }
+        } document.write('<br>' + 'có ' + count + ' số chẵn')
+        return p
+    }
+    let list = [1,5,4,8,7,6,8,7,8,6,22,14,552,44874]
+    let b = testNumbers(list)
+    document.write(b)
+</script>
+</body>
+</html>
