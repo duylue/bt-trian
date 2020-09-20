@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="content">
+    <h1>Tháng này có bao nhiêu ngày</h1>
+    <table>
+        <tr>
+            <td><input type="text" id="x3"></td>
+            <td><button type="button" onclick="thang()" >enter</button></td>
+        </tr><br>
+        <tr>
+            <td><p id="out2"></p></td>
+        </tr>
+    </table>
+</div>
+<script>
+    function thang() {
+        let nam = parseInt(prompt('nhap nam'))
+        let nhuan = false
+        if (nam % 4 ==0) {
+            if (nam % 100 == 0){
+                if (nam % 400 ==0)
+                    nhuan = true} else {
+                nhuan = true
+
+            }
+        } if(nhuan){
+            alert(nam + 'nam nhuan')
+        }else {
+            alert(nam + 'ko nhuan')
+        }
+
+        let day = +(document.getElementById('x3').value)
+        if(nhuan){
+
+            switch (day){
+                case 2: document.getElementById('out2').innerHTML= '29day'
+                    break
+                case 1 : case 3 : case 5: case 7 : case 8 :case 10: case 12:
+                    document.getElementById('out2').innerHTML = '31 day'
+                    break
+                case 4 :case  6 :case 11: case 9: document.getElementById('out2').innerHTML = '30day'
+                    break
+                default :
+                    document.getElementById('out2').innerHTML = 'bạn nhập sai tháng'
+                    break
+
+            }
+        }else {
+
+            switch (day){
+                case 2: document.getElementById('out2').innerHTML= '28 day'
+                    break
+                case 1 : case 3 : case 5: case 7 : case 8 :case 10: case 12:
+                    document.getElementById('out2').innerHTML = '31 day'
+                    break
+                case 4 :case  6 :case 11: case 9: document.getElementById('out2').innerHTML = '30day'
+                    break
+                default :
+                    document.getElementById('out2').innerHTML = 'bạn nhập sai tháng'
+                    break
+
+            }
+        }
+
+    }
+</script>
+</body>
+</html>
