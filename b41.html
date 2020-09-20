@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>//liệt kê số âm
+function testNumbers(a) {
+    let p = ''
+    count = 0
+    for (i = 0; i < a.length; i++) {
+        if (a[i]< 0) {
+            p = p + ' ' + a[i]
+            count=i
+            console.log(count)
+        }else {continue}
+        document.write('<br>' + 'vị trí ' + count + ' có số âm '+a[i])
+    }
+
+}
+let list = [1,5,4,8,-7,-68,7,8,6,22,-14,-552,44874]
+testNumbers(list)
+
+</script>
+</body>
+</html>
