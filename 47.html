@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>//tim số nguyên tố
+function testNumbers(a) {
+    var count =0
+    var p=' '
+    for (i = 0; i < a.length; i++){
+        let t= true
+        if (a[i]<2){
+            t= false
+        }
+       else {
+           for (j=2;j<(a[i]-1);j++){
+               if (a[i]%j==0){
+                   t= false
+               }
+           }
+        }if (t==true){
+          p =p + a[i]+' '
+        }else {
+           continue
+        }
+       count++
+
+    }
+    if (count==0){
+        return p= -1
+    }
+    document.write('có '+count+ ' số nguyên tố là ')
+   return p
+}
+let list = [1,54,42,32,11,7,81,21,52]
+ k =testNumbers(list)
+document.write(k)
+</script>
+
+
+</body>
+</html>
