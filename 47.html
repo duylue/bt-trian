@@ -9,6 +9,7 @@
 function testNumbers(a) {
     var count =0
     var p=' '
+    document.write( 'số nguyên đầu tiên là tố  là ')
     for (i = 0; i < a.length; i++){
         let t= true
         if (a[i]<2){
@@ -21,20 +22,22 @@ function testNumbers(a) {
                }
            }
         }if (t==true){
-          p =p + a[i]+' '
+          p =p + a[i]
+            count++
+            break
         }else {
            continue
         }
-       count++
+
 
     }
     if (count==0){
         return p= -1
     }
-    document.write('có '+count+ ' số nguyên tố là ')
+
    return p
 }
-let list = [1,54,42,32,11,7,81,21,52]
+let list = [1,54,42,32,81,21,52]
  k =testNumbers(list)
 document.write(k)
 </script>
