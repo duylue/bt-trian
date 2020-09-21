@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //số nguyên tố max
+
+    function testYou(b) {
+        var count =0
+        var p= []
+        var min =1000000
+        document.write('min là ')
+
+        for (i = 0; i < b.length; i++){
+            if (b[i]%2==0){
+                p.push(b[i])
+                count++
+                for (j=0;j<p.length;j++){
+                    if (p[j]<min){
+                        min= p[j]
+                    }
+                }
+            }
+            else {
+                continue
+            }
+        }
+        if (count=0){
+            return p=-1
+        }
+        return min
+    }
+
+    let NumbersArray =[1,52,5,17,101,14,22,2,107]
+    let c= testYou(NumbersArray)
+    document.write(c)
+</script>
+</body>
+</html>
