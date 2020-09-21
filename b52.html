@@ -5,6 +5,50 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    //số nguyên tố max
 
+    function testYou(b) {
+        var count =0
+        var p= []
+        var max=2
+        document.write('max là ')
+
+        for (i = 0; i < b.length; i++){
+            let t= true
+            if (b[i]<2){
+                t= false
+            }
+            else {
+                for (j=2;j<(b[i]-1);j++){
+                    if (b[i]%j==0){
+                        t= false
+                    }
+                }
+            }
+            if (t==true){
+                p.push(b[i])
+                for (j=0;j<p.length;j++){
+                    if (p[j]>max){
+                        max= p[j]
+                    }
+                }
+
+            }
+            else {
+                continue
+            }
+        }
+        if (count=0){
+            return p=-1
+        }
+        return max
+    }
+
+    let NumbersArray =[1,52,5,17,101,107]
+    let c= testYou(NumbersArray)
+    document.write(c)
+
+</script>
 </body>
 </html>
