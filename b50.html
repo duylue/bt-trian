@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    //số nguyên tố cuối cùng
+    function testYou(b) {
+        var count =0
+        var p=' '
+        for (i = 0; i < b.length; i++){
+            let t= true
+            if (b[i]<2){
+                t= false
+            }
+            else {
+                for (j=2;j<(b[i]-1);j++){
+                    if (b[i]%j==0){
+                        t= false
+                    }
+                }
+            }
+            if (t==true){
+                p= b[i]
+                count++
+            }
+            else {
+                continue
+            }
+        }
+        if (count=0){
+            return p=-1
+        }
+        return p
+    }
+
+    let NumbersArray =[1,52,5,17]
+    let c= testYou(NumbersArray)
+    document.write(c)
+
+</script>
 </body>
+
 </html>
