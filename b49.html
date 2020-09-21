@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+
 </head>
 <body>
-$END$
+<script>//tim số nguyên tố
+function testNumbers(a) {
+    var count =0
+    var p=' '
+    document.write( 'số nguyên đầu tiên là tố  là ')
+    for (i = 0; i < a.length; i++){
+        if (a[i]<0){
+            p=p+a[i]
+            count++
+            break
+        }
+    }
+    if (count==0
+    ){
+        return p= -1
+    }
+    return p
+}
+let list = [1,-54,81,21,52]
+k =testNumbers(list)
+document.write(k)
+</script>
+
 </body>
 </html>
